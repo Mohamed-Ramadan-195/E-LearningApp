@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">E - Learn</string>
+
+    // onBoarding
+    <string name="user_type">STUDENT / INSTRUCTOR</string>
+    <string name="user_type_body">As a user, you can register by choosing whether \n you are a student or an instructor</string>
+    <string name="course">Course registration</string>
+    <string name="course_body">By registering for the course, you will be able to access materials, do tests, record absences, and more.</string>
+    <string name="chat">Communicate with others</string>
+    <string name="chat_body">The application allows you to talk to other users through a group conversation that everyone can see</string>
+    <string name="quiz">Quiz with grades</string>
+    <string name="quiz_body">You can do a test and know your grades, this also helps the instructor to monitor the grades of all students in each test</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+
+    // sign in
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_sign_in_message">Hi ! Welcome back, you\'ve been missed</string>
+    <string name="example_gmail">example@gmail.com</string>
+    <string name="or_sign_in_with">Or sign in with</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+
+    // sign up
+    <string name="create_account">Create Account</string>
+    <string name="welcome_message_sign_up">Fill your information below or register \n with your social account</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="accept_with_terms_and_condition">Accept with Terms and Condition</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_sign_up_with">Or sign up with</string>
+    <string name="student">Student</string>
+    <string name="instructor">Instructor</string>
+    <string-array name="continue_as">
+        <item>Student</item>
+        <item>Instructor</item>
+    </string-array>
+    <string name="required">Required</string>
+
+    // complete profile
+    <string name="complete_your_profile">Complete Your Profile</string>
+    <string name="welcome_message_complete_profile">Don\'t worry, only you can see your personal \n data. No one else will be able to see it.</string>
+    <string name="example_phone">+2 01014333429</string>
+    <string name="first_grade">First Grade</string>
+    <string name="second_grade">Second Grade</string>
+    <string name="third_grade">Third Grade</string>
+    <string name="final_grade">Final Grade</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="grade">Grade</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="phone_number">Phone Number</string>
+
+    // bottom navigation menu
+    <string name="home_nav">Home</string>
+    <string name="course_nav">Course</string>
+    <string name="chat_nav">Chat</string>
+    <string name="profile_nav">Profile</string>
+
+    // instructor add fragment
+    <string name="create_new_course">Create New Course</string>
+    <string name="welcome_message_create_new_course">Please, Enter information for your course \n
+                            Course name , Quiz grade , Project grade , Attendance grade</string>
+    <string name="course_name">Course Name</string>
+    <string name="quiz_grade">Quiz Grade</string>
+    <string name="project_grade">Project Grade</string>
+    <string name="attendance_grade">Attendance Grade</string>
+    <string name="confirm">Confirm</string>
+
+    // course item
+    <string name="welcome_message_course_item">Show All Courses Add By You</string>
+    <string name="courses">Courses</string>
+
+    // course activity
+    <string name="instructor_control_page">Instructor control page</string>
+    <string name="generate_code">generate code</string>
+    <string name="open">Open</string>
+    <string name="attendance">Attendance</string>
+    <string name="create_new_quiz">Create New Quiz</string>
+    <string name="material">Material</string>
+    <string name="upload_material">Upload Material</string>
+    <string name="grades">Grades</string>
+    <string name="show_grades">Show Grades</string>
+    <string name="info_button">By Click on this button can you copy course id</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_mcq_quiz">Create mcq quiz</string>
+    <string name="question">Question ?</string>
+    <string name="welcome_message_enroll_course">Enter course id for enroll course</string>
+    <string name="enroll">Enroll</string>
+    <string name="welcome_message_grade">Grades all students in this course</string>
+    <string name="welcome_to_attendance_instructor">Generate Code To Attendance</string>
+    <string name="message_attendance">By Click generate code button, showed \n attendance code and click on generate to accept this</string>
+    <string name="answer_b">Answer (B)</string>
+    <string name="answer_a">Answer (A)</string>
+    <string name="answer_c">Answer (C)</string>
+    <string name="answer_d">Answer (D)</string>
+    <string name="answer">Answer :</string>
+    <string name="next_question">Next Question</string>
+    <string name="upload_this_quiz">Upload This Quiz</string>
+    <string name="end_quiz_questions">End Quiz Questions</string>
+    <string name="upload_quiz">Upload Quiz</string>
+    <string name="course_id">Course Id</string>
+    <string name="solve_quiz">Solve Quiz</string>
+    <string name="submit">Submit</string>
+    <string name="join">Join</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="log_out">Log out</string>
+    <string name="help_center">Help Center</string>
+    <string name="your_profile">Your profile</string>
+
+
+</resources>

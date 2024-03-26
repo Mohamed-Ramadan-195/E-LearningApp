@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ELearningApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.chats.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.student.fragments.QuestionsStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.student.fragments.StudentShowControlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.student.StudentControlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instructor.fragments.InstructorShowControlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instructor.InstructorControlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instructor.InstructorHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.student.StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.SlideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.authentication.CompleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.authentication.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.authentication.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

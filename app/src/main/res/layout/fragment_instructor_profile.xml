@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.instructor.InstructorProfileFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <TextView
+        android:id="@+id/profile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@color/white"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_tv" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:src="@drawable/baseline_person_24"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_tv" />
+
+    <TextView
+        android:id="@+id/username_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="Mohamed Ramadan"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/your_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="Your profile"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/_6sdp"
+        android:drawableTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_profile"
+        app:drawableStartCompat="@drawable/baseline_person_24"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@color/off_white"
+        app:layout_constraintEnd_toEndOf="@+id/your_profile_button"
+        app:layout_constraintStart_toStartOf="@+id/your_profile_button"
+        app:layout_constraintTop_toBottomOf="@id/your_profile_button" />
+
+    <TextView
+        android:id="@+id/settings_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_6sdp"
+        android:gravity="center_vertical"
+        android:text="@string/settings"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+        app:drawableStartCompat="@drawable/baseline_settings_24"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:drawableTint="@color/blue" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@color/off_white"
+        app:layout_constraintEnd_toEndOf="@+id/settings_profile_button"
+        app:layout_constraintStart_toStartOf="@+id/settings_profile_button"
+        app:layout_constraintTop_toBottomOf="@id/settings_profile_button" />
+
+    <TextView
+        android:id="@+id/privacy_policy_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_6sdp"
+        android:gravity="center_vertical"
+        android:text="@string/privacy_policy"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+        app:drawableStartCompat="@drawable/baseline_lock_24"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:drawableTint="@color/blue" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@color/off_white"
+        app:layout_constraintEnd_toEndOf="@+id/privacy_policy_profile_button"
+        app:layout_constraintStart_toStartOf="@+id/privacy_policy_profile_button"
+        app:layout_constraintTop_toBottomOf="@id/privacy_policy_profile_button" />
+
+    <TextView
+        android:id="@+id/help_center_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_6sdp"
+        android:gravity="center_vertical"
+        android:text="@string/help_center"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+        app:drawableStartCompat="@drawable/baseline_help_24"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:drawableTint="@color/blue" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@color/off_white"
+        app:layout_constraintEnd_toEndOf="@+id/help_center_profile_button"
+        app:layout_constraintStart_toStartOf="@+id/help_center_profile_button"
+        app:layout_constraintTop_toBottomOf="@id/help_center_profile_button" />
+
+    <TextView
+        android:id="@+id/log_out_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_6sdp"
+        android:gravity="center_vertical"
+        android:text="@string/log_out"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+        app:drawableStartCompat="@drawable/baseline_logout_24"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:drawableTint="@color/blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

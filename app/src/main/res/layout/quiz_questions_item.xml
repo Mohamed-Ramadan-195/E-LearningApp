@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_10sdp"
+    android:backgroundTint="@color/blue"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:padding="@dimen/_14sdp" >
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:text="@string/question"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:padding="@dimen/_6sdp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2"/>
+
+        <TextView
+            android:id="@+id/answerA_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_6sdp"
+            android:text=" A "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/question"
+            app:layout_constraintTop_toBottomOf="@+id/question" />
+
+        <TextView
+            android:id="@+id/answerA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Answer A"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="@id/question"
+            app:layout_constraintTop_toTopOf="@id/answerA_tv"
+            app:layout_constraintBottom_toBottomOf="@id/answerA_tv" />
+
+        <TextView
+            android:id="@+id/answerB_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_6sdp"
+            android:text=" B "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/question"
+            app:layout_constraintTop_toBottomOf="@+id/answerA_tv" />
+
+        <TextView
+            android:id="@+id/answerB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Answer B"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="@id/question"
+            app:layout_constraintTop_toTopOf="@id/answerB_tv"
+            app:layout_constraintBottom_toBottomOf="@id/answerB_tv" />
+
+        <TextView
+            android:id="@+id/answerC_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_6sdp"
+            android:text=" C "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/question"
+            app:layout_constraintTop_toBottomOf="@+id/answerB_tv" />
+
+        <TextView
+            android:id="@+id/answerC"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Answer C"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="@id/question"
+            app:layout_constraintTop_toTopOf="@id/answerC_tv"
+            app:layout_constraintBottom_toBottomOf="@id/answerC_tv" />
+
+        <TextView
+            android:id="@+id/answerD_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_6sdp"
+            android:text=" D "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/question"
+            app:layout_constraintTop_toBottomOf="@+id/answerC_tv" />
+
+        <TextView
+            android:id="@+id/answerD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Answer D"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="@id/question"
+            app:layout_constraintTop_toTopOf="@id/answerD_tv"
+            app:layout_constraintBottom_toBottomOf="@id/answerD_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

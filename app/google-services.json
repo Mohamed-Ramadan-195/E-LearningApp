@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695345274301",
+    "project_id": "e-learningapp-cc2fa",
+    "storage_bucket": "e-learningapp-cc2fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695345274301:android:5777aca8d45e08ef8706d4",
+        "android_client_info": {
+          "package_name": "com.example.e_learningapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-SO5-wDEoHg2PghkebrkXFWgxCNzCsjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
